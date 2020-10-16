@@ -1,0 +1,76 @@
+2020-10-16T03:59:45.811Z [grades-control-api] info: API Started
+2020-10-16T03:59:45.813Z [grades-control-api] info: API Started and File Created!
+2020-10-16T03:59:58.963Z [grades-control-api] info: API Started
+2020-10-16T03:59:58.965Z [grades-control-api] info: API Started and File Created!
+2020-10-16T04:00:18.219Z [grades-control-api] info: API Started
+2020-10-16T04:00:38.358Z [grades-control-api] info: API Started
+2020-10-16T04:01:14.150Z [grades-control-api] info: API Started
+2020-10-16T04:02:47.727Z [grades-control-api] info: API Started
+2020-10-16T04:04:37.811Z [grades-control-api] info: API Started
+2020-10-16T04:05:06.651Z [grades-control-api] info: API Started
+2020-10-16T04:05:32.983Z [grades-control-api] info: API Started
+2020-10-16T04:06:34.225Z [grades-control-api] info: API Started
+2020-10-16T04:12:18.242Z [grades-control-api] info: API Started
+2020-10-16T04:14:40.397Z [grades-control-api] info: API Started
+2020-10-16T04:15:41.927Z [grades-control-api] info: API Started
+2020-10-16T04:20:47.527Z [grades-control-api] info: API Started
+2020-10-16T04:21:20.008Z [grades-control-api] info: API Started
+2020-10-16T04:21:53.007Z [grades-control-api] info: API Started
+2020-10-16T04:24:58.515Z [grades-control-api] info: API Started
+2020-10-16T04:25:58.363Z [grades-control-api] info: API Started
+2020-10-16T04:31:36.763Z [grades-control-api] info: API Started
+2020-10-16T04:32:48.079Z [grades-control-api] info: API Started
+2020-10-16T04:32:58.239Z [grades-control-api] info: API Started
+2020-10-16T04:33:44.764Z [grades-control-api] info: API Started
+2020-10-16T04:35:16.876Z [grades-control-api] error: POST /grades - readFile is not defined
+2020-10-16T04:36:16.249Z [grades-control-api] info: API Started
+2020-10-16T04:36:39.073Z [grades-control-api] info: API Started
+2020-10-16T04:36:43.058Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:39:06.294Z [grades-control-api] info: API Started
+2020-10-16T04:39:13.371Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:39:14.806Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:39:15.819Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:39:16.752Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:39:47.245Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:39:48.633Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:40:14.421Z [grades-control-api] info: API Started
+2020-10-16T04:40:17.294Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:40:18.526Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:40:52.317Z [grades-control-api] info: API Started
+2020-10-16T04:41:00.972Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:41:58.106Z [grades-control-api] info: API Started
+2020-10-16T04:42:03.293Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:42:49.300Z [grades-control-api] info: API Started
+2020-10-16T04:43:26.327Z [grades-control-api] info: API Started
+2020-10-16T04:43:43.016Z [grades-control-api] info: API Started
+2020-10-16T04:44:29.245Z [grades-control-api] info: API Started
+2020-10-16T04:44:45.690Z [grades-control-api] info: API Started
+2020-10-16T04:45:17.899Z [grades-control-api] info: API Started
+2020-10-16T04:45:24.093Z [grades-control-api] error: POST /grades - The "path" argument must be one of type string, Buffer, or URL. Received type undefined
+2020-10-16T04:45:55.181Z [grades-control-api] info: API Started
+2020-10-16T04:46:19.293Z [grades-control-api] info: API Started
+2020-10-16T04:46:33.525Z [grades-control-api] error: POST /grades - newGrade is not defined
+2020-10-16T04:46:45.037Z [grades-control-api] info: API Started
+2020-10-16T04:47:40.830Z [grades-control-api] error: POST /grades - data.push is not a function
+2020-10-16T04:48:49.207Z [grades-control-api] info: API Started
+2020-10-16T04:49:53.920Z [grades-control-api] info: API Started
+2020-10-16T04:50:24.411Z [grades-control-api] info: API Started
+2020-10-16T04:50:47.804Z [grades-control-api] error: POST /grades - writeFile is not defined
+2020-10-16T04:51:10.153Z [grades-control-api] info: API Started
+2020-10-16T04:51:14.388Z [grades-control-api] info: API Started
+2020-10-16T04:52:19.744Z [grades-control-api] info: API Started
+2020-10-16T04:52:22.148Z [grades-control-api] info: API Started
+2020-10-16T04:52:36.319Z [grades-control-api] info: API Started
+2020-10-16T04:52:41.063Z [grades-control-api] info: API Started
+2020-10-16T04:54:18.107Z [grades-control-api] info: API Started
+2020-10-16T04:54:30.308Z [grades-control-api] info: API Started
+2020-10-16T04:54:37.231Z [grades-control-api] info: API Started
+2020-10-16T05:04:28.460Z [grades-control-api] info: API Started
+2020-10-16T05:04:29.550Z [grades-control-api] info: API Started
+2020-10-16T05:05:33.173Z [grades-control-api] info: API Started
+2020-10-16T05:05:49.734Z [grades-control-api] error: PUT /grades - consele is not defined
+2020-10-16T05:05:58.696Z [grades-control-api] info: API Started
+2020-10-16T05:06:33.768Z [grades-control-api] info: API Started
+2020-10-16T05:06:41.011Z [grades-control-api] info: API Started
+2020-10-16T05:07:55.567Z [grades-control-api] info: API Started
+2020-10-16T05:08:25.575Z [grades-control-api] info: API Started
