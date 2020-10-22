@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class Tribute extends Component {
     render() {
         return (
-            <div class="row">
-                <div class="row">
+            <div className="row">
+                <div className="row">
                     <div className="input-field col s2">
                         <input placeholder="Base INSS"/>
                     </div>
@@ -18,9 +18,9 @@ export default class Tribute extends Component {
                         <input placeholder="Desconto IRPF"/>
                     </div>
                 </div>
-                <div class="row">
+                <div className="row">
                     <div className="input-field col s2">
-                        <input placeholder="Desconto IRPF"/>
+                        <input placeholder="Salario Liquido"/>
                     </div>
                 </div>
             </div>
