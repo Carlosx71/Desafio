@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class Bar extends Component {
     render() {
         const { value, color = "black" } = this.props;
+        // console.log(this.props)
         
         return (
 

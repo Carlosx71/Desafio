@@ -12,6 +12,13 @@ export default class App extends Component {
       bar1: 33,
       bar2: 33,
       bar3: 33,
+      valueSalary: 0,
+      baseINSS: 0,
+      baseIRPF: 0,
+      discountINSS: 0,
+      discountIRPF: 0,
+      netSalary: 0,
+
     };
   }
 
@@ -36,21 +43,34 @@ export default class App extends Component {
     const bar2 = +event.target.value;
     const bar3 = 25;
     const bar1 = 100 - bar3;
-
-
+    
+    
     this.setState({ bar1, bar2, bar3 });
   };
+  
+  handleSetValue = (event) => {
+    const {baseINSS, baseIRPF, discountINSS, discountIRPF, netSalary } = calculateSalaryFrom(event.target.value)
+    this.setState({baseINSS, baseIRPF, discountINSS, discountIRPF, netSalary})
+
+  }
 
   render() {
-    const { bar1, bar2, bar3 } = this.state;
-    console.log(calculateSalaryFrom(4000))
+    const { bar1, bar2, bar3, valueSalary, baseINSS, baseIRPF, discountINSS, discountIRPF, netSalary } = this.state;
+    const calculo = {
+      baseINSS: baseINSS,
+      baseIRPF: baseIRPF,
+      discountINSS: discountINSS,
+      discountIRPF: discountIRPF,
+      netSalary: netSalary
+    }
+
     return (
       <div className="container">
         <div className="App">
           <h1>React Salário</h1>
         </div>
-        <Inputsalry /> 
-        <Tribute /> 
+        <Inputsalry value={valueSalary} onChange={this.handleSetValue} /> 
+        <Tribute calculo={calculo}/> 
         <div className="row">
           {/* <h1>React barras</h1> */}
           <div className="row">
@@ -65,11 +85,12 @@ export default class App extends Component {
           </div>
           </div>
         </div>
-
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}>
-          <Bar value={bar1} color="red" />
-          <Bar value={bar2} color="green" />
-          <Bar value={bar3} color="blue" />
+        <div className="row">
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}>
+            <Bar value={bar1} color="red" />
+            <Bar value={bar2} color="green" />
+            <Bar value={bar3} color="blue" />
+          </div>
         </div>
       </div>
       );
