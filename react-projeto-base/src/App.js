@@ -69,7 +69,7 @@ export default class App extends Component {
         <div className="App">
           <h1>React Salário</h1>
         </div>
-        <Inputsalry value={valueSalary} onChange={this.handleSetValue} /> 
+        <Inputsalry value={valueSalary} setValue={this.handleSetValue} /> 
         <Tribute calculo={calculo}/> 
         <div className="row">
           {/* <h1>React barras</h1> */}
