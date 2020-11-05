@@ -34,9 +34,49 @@ controller.getBalance = async (req, res, next) => {
 
 }
 
+controller.avgAg = async (req, res, next) => {
+    try {
+        const avgAg = await accountModel.aggregate([
+            {$match: {agencia : 10}},
+           { $group: {_id: null, media: {$avg: "$balance"}}}
+        ]);
+
+    res.send(avgAg);
+    } catch (error) {
+        next(error);
+    }
+};
+
+controller.minBalance = async (req, res, next) => {
+    try {
+        // const minBalance = await accountModel.aggregate([
+        //     {$match: {agencia : 10}},
+        //    { $group: {_id: null, media: {$avg: "$balance"}}}
+        // ]);
+        const limit = parseInt(req.params.qtyClient)
+        const minBalance = await accountModel.find({},{ agencia: 1, conta : 1, balance : 1})
+        .sort({balance: 1}).limit(limit)
+
+        res.send(minBalance)
+    } catch (error) {
+        next(error)
+    }
+};
+
+controller.maxBalance = async (req, res, next) => {
+    try {
+        const limit = parseInt(req.params.qtyClient)
+        const minBalance = await accountModel.find({},{ name: 1, agencia: 1, conta : 1, balance : 1})
+        .sort({balance: -1, name: 1}).limit(limit)
+
+        res.send(minBalance)
+    } catch (error) {
+        next(error)
+    }
+};
+
 // POSTS
 controller.post = async (req, res, next) => {
-    const account1 = req.body
     const account = new accountModel(req.body);
 
     try {
@@ -196,6 +236,24 @@ controller.transaction = async (req, res, next) => {
         next(error)
     }
 }
+
+controller.putPrivate = async (req, res, next) => {
+    try {
+        const agencias = await accountModel.distinct("agencia")
+        let account = []
+        agencias.forEach(async (agenciaNum) => {
+            const bigAcc = await accountModel.find({agencia: agenciaNum},).sort({balance: -1}).limit(1)
+            console.log(...bigAcc)
+            account.push(bigAcc)
+        })
+        console.log(account)
+        // const minBalance = await accountModel.find({agencia : agencias})
+        // .sort({balance: -1}).limit(agencias.length)
+        await res.send(account)
+    } catch (error) {
+        next(error)
+    }
+};
 
 // DELETE
 controller.deleteOne = async (req, res, next) => {
